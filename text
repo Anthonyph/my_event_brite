@@ -1,0 +1,6 @@
+> #<Event id: nil, start_date: "2019-11-01 00:00:00", duration: 95, title: "blabla", description: "blablablablablablablablablabla", price: 95, location: "MONTPELLIER", admin_id: nil, created_at: nil, updated_at: nil>
+irb(main):008:0> Event.create(start_date: "2019-11-1", duration: 95, title: "blabla", description: "blablablablablablablablablabla", price: 95, location: "MONTPELLIER").errors
+   (0.5ms)  BEGIN
+   (0.7ms)  ROLLBACK
+=> #<ActiveModel::Errors:0x000055f1cbc15288 @base=#<Event id: nil, start_date: "2019-11-01 00:00:00", duration: 95, title: "blabla", description: "blablablablablablablablablabla", price: 95, location: "MONTPELLIER", admin_id: nil, created_at: nil, updated_at: nil>, @messages={:start_date=>["Event can't start in the past"]}, @details={:start_date=>[{:error=>"Event can't start in the past"}]}>
+
