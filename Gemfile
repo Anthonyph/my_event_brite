@@ -66,7 +66,7 @@ gem "table_print", "~> 1.5"
 
 gem "faker", "~> 2.7"
 
-gem "better_errors", "~> 2.5"
+gem "better_errors", "~> 2.8"
 
 gem "dotenv-rails", "~> 2.7"
 
